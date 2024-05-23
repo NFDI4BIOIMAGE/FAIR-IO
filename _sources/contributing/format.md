@@ -1,4 +1,4 @@
-# YML format
+# Format of content
 
 In this repository, we store FAIR-IO materials using Markdown and for links we use a simple YML format. 
 
