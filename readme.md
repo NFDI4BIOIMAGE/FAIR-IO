@@ -13,8 +13,8 @@ pip install jupyterlab
 pip install jupyter-book
 pip install jupyterlab-spellchecker
 
-git clone https://github.com/NFDI4BIOIMAGE/training
-cd training
+git clone https://github.com/NFDI4BIOIMAGE/FAIR-IO
+cd FAIR-IO
 jupyter lab
 ```
 
