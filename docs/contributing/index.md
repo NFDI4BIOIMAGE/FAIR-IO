@@ -1,10 +1,10 @@
 # How to contribute
 
-This repository contains lists of training materials. It is extensible using github pull requests. You find a how-to guide on the bottom of this page. The format for entries in the repository is documented on the next page.
+This repository is extensible using github pull requests. You find a how-to guide on the bottom of this page. The format for entries in the repository is documented on the next page.
 
 # Quick contributing short-cut:
 
-If you're too busy to enter everything in detail yourself, please just create a [github issue](https://github.com/NFDI4BIOIMAGE/FAIR-IO/issues) with a link to the materials you want to include in our list. We can take of all the details.
+If you're too busy to enter everything in detail yourself, please just create a [github issue](https://github.com/NFDI4BIOIMAGE/FAIR-IO/issues) with content or links to the materials you want to include. We can take of all the details.
 
 ## What to contribute
 
