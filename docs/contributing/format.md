@@ -1,6 +1,10 @@
 # YML format
 
-In this repository, we store FAIR-IO materials using Markdown and for links a simple YML format. These files are structured like this:
+In this repository, we store FAIR-IO materials using Markdown and for links we use a simple YML format. 
+
+Add **Markdown files** to the section folders under `docs` and register the file in `docs/_toc.yml`.
+
+The **YML files** in `resources` are structured like this:
 
 ```
 resources
