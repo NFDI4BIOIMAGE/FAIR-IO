@@ -1,6 +1,7 @@
 # FAIR-IO
 
-This Jupyter Book contains FAIR-IO documentation and linked material and has been updated {last_updated}.
+Here you will find specifications, documentation and examples of components of “FAIR Image Objects” (FAIR-IO) for the bioimaging community.
+The entities described are intended to promote the reuse and exchange of bioimaging data.
 
 Feedback and contributions are very welcome, e.g. as [github issue](https://github.com/NFDI4BIOIMAGE/FAIR-IO/issues).
 
