@@ -12,7 +12,4 @@ parts:
     - file: contributing/index
     - file: contributing/format
 
-    
-  - caption: Appendix
-    chapters:
-    - file: imprint
+  
