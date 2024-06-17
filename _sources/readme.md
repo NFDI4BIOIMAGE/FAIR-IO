@@ -4,7 +4,7 @@ Here you will find **standards**, **tooling** and **best practices** for “FAIR
 The entities described are intended to promote the reuse and exchange of bioimaging data.
 
 
-$\color{#D29922}\textsf{\Large\&#x26A0;\kern{0.2cm}\normalsize Warning: This knowledge base isn't complete.}$ 
+$\color{#D29922}\textsf{Warning: This knowledge base isn't complete.}$ 
 
 
 
