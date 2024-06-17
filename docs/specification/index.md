@@ -7,7 +7,7 @@ A FAIR-IO bundle combines the necessary acquisition and provenance metadata toge
 <div>
 <table style="margin-left:5px;">
 <tr>
-    <td style="text-align:left;"><img src="FAIR-IO_inner.png" style="width:120px; float:left" ></td>
+    <!--<td style="text-align:left;"><img src="FAIR-IO_inner.png" style="width:120px; float:left" ></td>-->
     <td>
         <ul>
           <li>Use data formats that store binary data with multiple resolutions in a single cloud-compatible, chunkable format. These enable web-optimised data access and high-performance cloud storage</li>
@@ -25,7 +25,7 @@ A FAIR-IO bundle combines the necessary acquisition and provenance metadata toge
 <div>
 <table style="margin-left:5px;">
 <tr>
-    <td style="text-align:left;"><img src="FAIR-IO_middle.png" style="width:80px; float:left" ></td>
+    <!--<td style="text-align:left;"><img src="FAIR-IO_middle.png" style="width:80px; float:left" ></td>-->
     <td>
         <ul>
           <li>Ensure that the relationship and meaning of the data is clear described or linked</li>
