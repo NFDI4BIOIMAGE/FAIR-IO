@@ -1,6 +1,6 @@
 # FAIR-IO
 
-Here you will find standards, tooling and best practices for “FAIR Image Objects” (FAIR-IO) in the bioimaging community.
+Here you will find **standards**, **tooling** and **best practices** for “FAIR Image Objects” (FAIR-IO) in the bioimaging community.
 The entities described are intended to promote the reuse and exchange of bioimaging data.
 
 Feedback and contributions are very welcome, e.g. as [github issue](https://github.com/NFDI4BIOIMAGE/FAIR-IO/issues).
