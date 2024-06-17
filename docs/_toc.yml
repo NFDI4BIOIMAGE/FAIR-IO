@@ -4,7 +4,7 @@
 format: jb-book
 root: readme
 parts:
-  - caption: Specification
+  - caption: Specifications
     chapters:
     - file: specification/index
   - caption: Contributing
