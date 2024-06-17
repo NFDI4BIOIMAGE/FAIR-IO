@@ -199,6 +199,10 @@ const thebe_selector_output = ".output, .cell_output"
   
 
   
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+  </label>
+  
 
 </div>
   </nav>
@@ -452,7 +456,9 @@ title="Print to PDF"
       
   </ul>
 </div>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary" data-toggle="tooltip" data-placement="left" title="Toggle secondary sidebar">
+            <span class="fa-solid fa-list"></span>
+        </label>
     </div>
 </div>
             </div>
@@ -465,6 +471,24 @@ title="Print to PDF"
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recommendations-for-easily-sharable-binary-data">
+   Recommendations for easily sharable binary data:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recommendations-for-easily-sharable-metadata">
+   Recommendations for easily sharable metadata:
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -475,6 +499,41 @@ title="Print to PDF"
 <h1>What is a FAIR-IO<a class="headerlink" href="#what-is-a-fair-io" title="Permalink to this heading">#</a></h1>
 <p>A FAIR-IO bundle combines the necessary acquisition and provenance metadata together with multi-resolution, chunked binary data in a single cloud-compatible format for simplified sharing and re-use.</p>
 <p><img alt="FAIR-IO concept" src="../_images/FAIR-IO_10.5281-zenodo.10512531.png" /></p>
+<section id="recommendations-for-easily-sharable-binary-data">
+<h2>Recommendations for easily sharable binary data:<a class="headerlink" href="#recommendations-for-easily-sharable-binary-data" title="Permalink to this heading">#</a></h2>
+<div>
+<table style="margin-left:5px;">
+<tr>
+    <td style="text-align:left;"><img src="FAIR-IO_inner.png" style="width:120px; float:left" ></td>
+    <td>
+        <ul>
+          <li>Use data formats that store binary data with multiple resolutions in a single cloud-compatible, chunkable format. These enable web-optimised data access and high-performance cloud storage</li>
+          <li>Store data in a public available space accessible via a data specific URL</li> 
+        </ul>
+        <b>Serialization example:</b> ome-zarr (<a href="https://doi.org/10.1007/s00418-023-02209-1"> About</a> |<a href=""> Tools</a>)
+    </td>
+</tr>
+</table>
+</div>
+</section>
+<section id="recommendations-for-easily-sharable-metadata">
+<h2>Recommendations for easily sharable metadata:<a class="headerlink" href="#recommendations-for-easily-sharable-metadata" title="Permalink to this heading">#</a></h2>
+<div>
+<table style="margin-left:5px;">
+<tr>
+    <td style="text-align:left;"><img src="FAIR-IO_middle.png" style="width:80px; float:left" ></td>
+    <td>
+        <ul>
+          <li>Ensure that the relationship and meaning of the data is clear described or linked</li>
+          <li>Use metadata formats that store metadata in a machine readable form, that means </li>
+          <li>store data in a public available space accessible via a data specific URL</li> 
+        </ul>
+        <b>Serialization example:</b> JSONLD (<a href=""> About</a> |<a href=""> Tools</a>), Turtle (<a href=""> About</a> |<a href=""> Tools</a>)
+    </td>
+</tr>
+</table>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -525,6 +584,32 @@ title="Print to PDF"
           </div>
           
           
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recommendations-for-easily-sharable-binary-data">
+   Recommendations for easily sharable binary data:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recommendations-for-easily-sharable-metadata">
+   Recommendations for easily sharable metadata:
+  </a>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+            </div>
           
           
         </div>
