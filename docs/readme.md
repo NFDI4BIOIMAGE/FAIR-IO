@@ -3,6 +3,12 @@
 Here you will find **standards**, **tooling** and **best practices** for “FAIR Image Objects” (FAIR-IO) in the bioimaging community.
 The entities described are intended to promote the reuse and exchange of bioimaging data.
 
+
+$\color{#D29922}\textsf{\Large\&#x26A0;\kern{0.2cm}\normalsize Warning: This knowledge base isn't complete.}$ 
+
+
+
+
 Feedback and contributions are very welcome, e.g. as [github issue](https://github.com/NFDI4BIOIMAGE/FAIR-IO/issues).
 
 
