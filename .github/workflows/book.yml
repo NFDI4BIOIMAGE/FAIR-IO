@@ -27,12 +27,22 @@ jobs:
 
     # Build the book
     - name: Build the book
+      id: build
       run: |
+        set -e  # skip if error
         jupyter-book build ./docs/
-
+        echo "BUILD_DIR=$(realpath ./docs/_build/html)" >> $GITHUB_OUTPUT
+    
+    - name: Verify HTML output exists
+      run: |
+        if [ ! -d "${{ steps.build.outputs.BUILD_DIR }}" ]; then
+           echo "ERROR: No HTML directory found at ${{ steps.build.outputs.BUILD_DIR }}"
+           exit 1
+        fi
+    
     # Push the book's HTML to github-pages
     - name: GitHub Pages action
-      uses: peaceiris/actions-gh-pages@v3.5.9
+      uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs/_build/html
+        publish_dir: ${{ steps.build.outputs.BUILD_DIR }}
