@@ -30,7 +30,7 @@ jobs:
       id: build
       run: |
         set -e  # skip if error
-        jupyter-book build ./docs/
+        jupyter-book build docs/
         echo "BUILD_DIR=$(realpath ./docs/_build/html)" >> $GITHUB_OUTPUT
     
     - name: Verify HTML output exists
