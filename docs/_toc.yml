@@ -7,11 +7,11 @@ parts:
   - caption: Specifications
     chapters:
     - file: specification/index
-  - caption: Tools
+    - file: specification/ro-crate.md
+    - file: specification/MICrate.md
+  - caption: Usage
     chapters:
     - file: tools/index.md
-  - caption: Guidelines
-    chapters:
     - file: guidelines/index.md
   - caption: Use-Cases
     chapters:
