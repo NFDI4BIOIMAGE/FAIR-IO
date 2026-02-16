@@ -30,13 +30,13 @@ jobs:
       id: build
       run: |
         set -e  # skip if error
-        jupyter-book build docs/
-        echo "BUILD_DIR=$(realpath ./docs/_build/html)" >> $GITHUB_OUTPUT
+        jupyter-book build ./docs/
+        echo "BUILD_DIR=$(realpath ./docs/_build/)" >> $GITHUB_OUTPUT
     
     - name: Verify HTML output exists
       run: |
         if [ ! -d "${{ steps.build.outputs.BUILD_DIR }}" ]; then
-           echo "ERROR: No HTML directory found at ${{ steps.build.outputs.BUILD_DIR }}"
+           echo "ERROR: No directory found at ${{ steps.build.outputs.BUILD_DIR }}"
            exit 1
         fi
     
@@ -45,4 +45,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ${{ steps.build.outputs.BUILD_DIR }}
+        publish_dir: ${{ steps.build.outputs.BUILD_DIR }}/html
