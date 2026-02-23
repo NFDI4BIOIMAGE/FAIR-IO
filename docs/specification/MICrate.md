@@ -2,7 +2,7 @@
 
 RO-Crate Bioimaging profiles are being developed as a machine-readable exchange mechanism for microscopy data.
 
-A first iteration of experimentation with RO-Crates for bioimaging happened in the context of the [OME 2024 NGFF Challenge](https://ome.github.io/ome2024-ngff-challenge/). For that , a [minimal design](https://github.com/ome/ome2024-ngff-challenge/blob/42f710bc6b456a0b6e31f431c8283fdd670046b5/dev3/2024-07-02/ro-crate-metadata-proposal.md) was proposed and used for managing contextual metadata on heterogeneous datasets.
+A first iteration of experimentation with RO-Crates for bioimaging happened in the context of the [OME 2024 NGFF Challenge](https://ome.github.io/ome2024-ngff-challenge/). For that, a [minimal design](https://github.com/ome/ome2024-ngff-challenge/blob/42f710bc6b456a0b6e31f431c8283fdd670046b5/dev3/2024-07-02/ro-crate-metadata-proposal.md) was proposed and used for managing contextual metadata on heterogeneous datasets.
 
 The details of the use of RO-Crates in the context of the challenge, as well as a few other uses directly related to the [Open Microscopy Environment](https://openmicroscopy.org) are reported as an [use case on the RO-Crate Website](https://www.researchobject.org/ro-crate/ome).
 
