@@ -5,7 +5,7 @@ a FAIR Digital Object (FDO, [DOI:10.5281/zenodo.7824714](https://doi.org/10.5281
 ![FAIR-IO concept](FAIR-IO_10.5281-zenodo.10512531.png)
 
 FAIR-IO is based on the following recommendations for binary (pixel) data and textual metadata.
-## Recommendations for easily sharable binary data:
+## Recommendations for easily shareable binary data:
 <div>
 <table style="margin-left:5px;">
 <tr>
@@ -23,7 +23,7 @@ FAIR-IO is based on the following recommendations for binary (pixel) data and te
 
 **Example format**: OME-Zarr ([About](https://doi.org/10.1007/s00418-023-02209-1) | [Tools](../tools/index.md))
 
-## Recommendations for easily sharable metadata:
+## Recommendations for easily shareable metadata:
 <div>
 <table style="margin-left:5px;">
 <tr>
