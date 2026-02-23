@@ -14,4 +14,4 @@ Overview of software, libraries, and CLI tools that generate, read, or convert F
 
 * [**OMERO.forms**]()
 
-* [**RO-Crate Viewer**]((https://arunaengine.github.io/ro-crate-explorer/) for exploring and visualizing RO-Crates ([github](https://github.com/arunaengine/ro-crate-explorer)
+* [**RO-Crate Viewer**](https://arunaengine.github.io/ro-crate-explorer/) for exploring and visualizing RO-Crates ([GitHub](https://github.com/arunaengine/ro-crate-explorer)).
