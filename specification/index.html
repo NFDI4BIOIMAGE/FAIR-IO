@@ -64,7 +64,7 @@
     <link rel="prev" title="FAIR-IO" href="../readme.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="2026-02-16"/>
+    <meta name="docbuild:last-update" content="2026-02-24"/>
   </head>
   
   
@@ -184,7 +184,7 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">What is a FAIR-IO</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ro-crate.html">RO-Crate</a></li>
-<li class="toctree-l1"><a class="reference internal" href="MICrate.html">RO-Crate Bioimaging profile (detached)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MICrate.html">RO-Crate Bioimaging profiles (detached)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Usage</span></p>
 <ul class="nav bd-sidenav">
@@ -193,7 +193,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Use-Cases</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../use-cases/index.html">Community/ Use-Cases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../use-cases/index.html">Community/Use-Cases</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contributing</span></p>
 <ul class="nav bd-sidenav">
@@ -395,8 +395,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recommendations-for-easily-sharable-binary-data">Recommendations for easily sharable binary data:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recommendations-for-easily-sharable-metadata">Recommendations for easily sharable metadata:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recommendations-for-easily-shareable-binary-data">Recommendations for easily shareable binary data:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recommendations-for-easily-shareable-metadata">Recommendations for easily shareable metadata:</a></li>
 </ul>
             </nav>
         </div>
@@ -411,11 +411,11 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="what-is-a-fair-io">
 <h1>What is a FAIR-IO<a class="headerlink" href="#what-is-a-fair-io" title="Link to this heading">#</a></h1>
 <p>A FAIR-IO (FAIR Image Object) bundle combines acquisition and provenance metadata together with multi-resolution, chunked binary pixel data in a single cloud-compatible format for simplified sharing and re-use. As such, FAIR-IO implements
-a FAIR Digital Object (FDO, DOI:10.5281/zenodo.7824714) as illustrated below.</p>
+a FAIR Digital Object (FDO, <a class="reference external" href="https://doi.org/10.5281/zenodo.7824714">DOI:10.5281/zenodo.7824714</a>) as illustrated below.</p>
 <p><img alt="FAIR-IO concept" src="../_images/FAIR-IO_10.5281-zenodo.10512531.png" /></p>
 <p>FAIR-IO is based on the following recommendations for binary (pixel) data and textual metadata.</p>
-<section id="recommendations-for-easily-sharable-binary-data">
-<h2>Recommendations for easily sharable binary data:<a class="headerlink" href="#recommendations-for-easily-sharable-binary-data" title="Link to this heading">#</a></h2>
+<section id="recommendations-for-easily-shareable-binary-data">
+<h2>Recommendations for easily shareable binary data:<a class="headerlink" href="#recommendations-for-easily-shareable-binary-data" title="Link to this heading">#</a></h2>
 <div>
 <table style="margin-left:5px;">
 <tr>
@@ -423,16 +423,16 @@ a FAIR Digital Object (FDO, DOI:10.5281/zenodo.7824714) as illustrated below.</p
     <td>
         <ul>
           <li>Use data formats that store binary data with multiple resolutions in a single cloud-compatible, chunkable format. These enable web-optimised data access and high-performance cloud storage</li>
-          <li>Store data in a public available space accessible via a data specific URL</li> 
+          <li>Store data in a public available space accessible via a data specific URL</li>
         </ul>
-        <b>Example format:</b> ome-zarr (<a href="https://doi.org/10.1007/s00418-023-02209-1"> About</a> |<a href=""> Tools</a>)
     </td>
 </tr>
 </table>
 </div>
+<p><strong>Example format</strong>: OME-Zarr (<a class="reference external" href="https://doi.org/10.1007/s00418-023-02209-1">About</a> | <a class="reference internal" href="../tools/index.html"><span class="std std-doc">Tools</span></a>)</p>
 </section>
-<section id="recommendations-for-easily-sharable-metadata">
-<h2>Recommendations for easily sharable metadata:<a class="headerlink" href="#recommendations-for-easily-sharable-metadata" title="Link to this heading">#</a></h2>
+<section id="recommendations-for-easily-shareable-metadata">
+<h2>Recommendations for easily shareable metadata:<a class="headerlink" href="#recommendations-for-easily-shareable-metadata" title="Link to this heading">#</a></h2>
 <div>
 <table style="margin-left:5px;">
 <tr>
@@ -441,13 +441,13 @@ a FAIR Digital Object (FDO, DOI:10.5281/zenodo.7824714) as illustrated below.</p
         <ul>
           <li>Ensure that the relationship and meaning of the data is clear described or linked</li>
           <li>Use metadata formats that store metadata in a machine readable form, that means </li>
-          <li>store data in a public available space accessible via a data specific URL</li> 
+          <li>store data in a public available space accessible via a data specific URL</li>
         </ul>
-        <b>Example formats:</b> JSON-LD (<a href=""> About</a> |<a href=""> Tools</a>), Turtle (<a href=""> About</a> |<a href=""> Tools</a>)
     </td>
 </tr>
 </table>
 </div>
+<p><strong>Example formats</strong>:JSON-LD (<a class="reference external" href="https://json-ld.org/">About</a> | <a class="reference internal" href="../tools/index.html"><span class="std std-doc">Tools</span></a>), Turtle (<a class="reference external" href="https://www.w3.org/TR/turtle/">About</a> | <a class="reference internal" href="../tools/index.html"><span class="std std-doc">Tools</span></a>)</p>
 </section>
 </section>
 
@@ -515,8 +515,8 @@ a FAIR Digital Object (FDO, DOI:10.5281/zenodo.7824714) as illustrated below.</p
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recommendations-for-easily-sharable-binary-data">Recommendations for easily sharable binary data:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recommendations-for-easily-sharable-metadata">Recommendations for easily sharable metadata:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recommendations-for-easily-shareable-binary-data">Recommendations for easily shareable binary data:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recommendations-for-easily-shareable-metadata">Recommendations for easily shareable metadata:</a></li>
 </ul>
   </nav></div>
 
@@ -543,7 +543,7 @@ By Susanne Kunis, Josh Moore,... and the NFDI4BioImage Initiative
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on 2026-02-16.
+  Last updated on 2026-02-24.
   <br/>
 </p>
   </div>
@@ -552,7 +552,7 @@ By Susanne Kunis, Josh Moore,... and the NFDI4BioImage Initiative
     
 <div class="extra_footer">
   <p>
-Copyright: Licensed <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY 4.0</a> unless mentioned otherwise. 
+Copyright: Licensed <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY 4.0</a> unless mentioned otherwise.
 Contributions and feedback are welcome.
 </p>
 

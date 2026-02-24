@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>RO-Crate Bioimaging profile (detached) &#8212; NFDI4BioImage FAIR-IO</title>
+    <title>RO-Crate Bioimaging profiles (detached) &#8212; NFDI4BioImage FAIR-IO</title>
   
   
   
@@ -64,7 +64,7 @@
     <link rel="prev" title="RO-Crate" href="ro-crate.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="2026-02-16"/>
+    <meta name="docbuild:last-update" content="2026-02-24"/>
   </head>
   
   
@@ -184,7 +184,7 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="index.html">What is a FAIR-IO</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ro-crate.html">RO-Crate</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">RO-Crate Bioimaging profile (detached)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">RO-Crate Bioimaging profiles (detached)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Usage</span></p>
 <ul class="nav bd-sidenav">
@@ -193,7 +193,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Use-Cases</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../use-cases/index.html">Community/ Use-Cases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../use-cases/index.html">Community/Use-Cases</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contributing</span></p>
 <ul class="nav bd-sidenav">
@@ -385,7 +385,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>RO-Crate Bioimaging profile (detached)</h1>
+    <h1>RO-Crate Bioimaging profiles (detached)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -395,7 +395,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#specification">Specification</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#micrate-specification">MICrate Specification</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ro-crate-metadata-descriptor">RO-Crate Metadata Descriptor</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#root-data-entity">Root Data Entity</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contextual-entity">Contextual Entity</a></li>
@@ -414,23 +414,30 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="ro-crate-bioimaging-profile-detached">
-<h1>RO-Crate Bioimaging profile (detached)<a class="headerlink" href="#ro-crate-bioimaging-profile-detached" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="ro-crate-bioimaging-profiles-detached">
+<h1>RO-Crate Bioimaging profiles (detached)<a class="headerlink" href="#ro-crate-bioimaging-profiles-detached" title="Link to this heading">#</a></h1>
+<p>RO-Crate Bioimaging profiles are being developed as a machine-readable exchange mechanism for microscopy data.</p>
+<p>A first iteration of experimentation with RO-Crates for bioimaging happened in the context of the <a class="reference external" href="https://ome.github.io/ome2024-ngff-challenge/">OME 2024 NGFF Challenge</a>. For that, a <a class="reference external" href="https://github.com/ome/ome2024-ngff-challenge/blob/42f710bc6b456a0b6e31f431c8283fdd670046b5/dev3/2024-07-02/ro-crate-metadata-proposal.md">minimal design</a> was proposed and used for managing contextual metadata on heterogeneous datasets.</p>
+<p>The details of the use of RO-Crates in the context of the challenge, as well as a few other uses directly related to the <a class="reference external" href="https://openmicroscopy.org">Open Microscopy Environment</a> are reported as an <a class="reference external" href="https://www.researchobject.org/ro-crate/ome">use case on the RO-Crate Website</a>.</p>
+<p>Similarly, a detached RO-Crate profile, heavily inspired by the MICrate here, is being developed as an interoperability mechanism for study-level metadata as <a class="reference external" href="https://github.com/BioImage-Archive/gide-search">part of the FoundingGIDE project</a>. The GIDE project does not connect RO-Crate to entry points for the <em>data</em>, but to the <em>pages for studies</em> on data repositories, such as BioImage Archive and the Image Data Resource.</p>
+<!-- TOFIX, the GIDE link is likely to change.
+Current profile details are at https://github.com/BioImage-Archive/gide-search/blob/main/resources/rocrate/example-target-detached-rocrate-v0.2/profile.md
+ -->
+<section id="micrate-specification">
+<h2>MICrate Specification<a class="headerlink" href="#micrate-specification" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>follow up on <a class="reference external" href="https://github.com/ome/ome2024-ngff-challenge/blob/42f710bc6b456a0b6e31f431c8283fdd670046b5/dev3/2024-07-02/ro-crate-metadata-proposal.md">ro-crate bioimaging minimal design</a></p></li>
 <li><p>Version v1.0.0-draft</p></li>
 <li><p><strong>detached</strong> RO-Crate</p></li>
 <li><p>Authors: Susanne Kunis</p></li>
 </ul>
-<section id="specification">
-<h2>Specification<a class="headerlink" href="#specification" title="Link to this heading">#</a></h2>
 <p><img alt="Detached Ro-Crate" src="../_images/ro-crate_detached_v1.0.0.png" /></p>
 <section id="ro-crate-metadata-descriptor">
 <h3>RO-Crate Metadata Descriptor<a class="headerlink" href="#ro-crate-metadata-descriptor" title="Link to this heading">#</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="s2">&quot;@id&quot;</span><span class="p">:</span> <span class="s2">&quot;ro-crate-metadata.json&quot;</span><span class="p">,</span>
     <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;CreativeWork&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;conformsTo&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;@id&quot;</span><span class="p">:</span> <span class="s2">&quot;https://w3id.org/ro/crate/1.2-DRAFT&quot;</span><span class="p">},</span>
+    <span class="s2">&quot;conformsTo&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;@id&quot;</span><span class="p">:</span> <span class="s2">&quot;https://w3id.org/ro/crate/1.2&quot;</span><span class="p">},</span>
     <span class="s2">&quot;about&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;@id&quot;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">url_zarr</span><span class="o">&gt;</span><span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -443,13 +450,9 @@ document.write(`
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">&#64;id</span></code>: <a class="reference external" href="https://schema.org/URL"><code class="docutils literal notranslate"><span class="pre">URL</span></code></a> (MUST)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&#64;type</span></code>: <a class="reference external" href="https://schema.org/Dataset"><code class="docutils literal notranslate"><span class="pre">Dataset</span></code></a> (MUST)</p></li>
-<li><p><a class="reference external" href="https://schema.org/name"><code class="docutils literal notranslate"><span class="pre">name</span></code></a>: <a class="reference external" href="https://schema.org/Text"><code class="docutils literal notranslate"><span class="pre">Text</span></code></a> (SHOULD) <br> [<em>identify the dataset to humans well enough to disam-
-biguate it from other RO-Crates</em>]</p></li>
-<li><p><a class="reference external" href="https://schema.org/description"><code class="docutils literal notranslate"><span class="pre">description</span></code></a>:<a class="reference external" href="https://schema.org/Text"><code class="docutils literal notranslate"><span class="pre">Text</span></code></a> (SHOULD) <br> [<em>further elaborate on the name to provide a sum-
-mary of the context in which the dataset is important</em>]</p></li>
-<li><p><a class="reference external" href="https://schema.org/license"><code class="docutils literal notranslate"><span class="pre">license</span></code></a>:<a class="reference external" href="https://schema.org/CreativeWork"><code class="docutils literal notranslate"><span class="pre">CreativeWork</span></code></a> or <a class="reference external" href="https://schema.org/URL"><code class="docutils literal notranslate"><span class="pre">URL</span></code></a> or <a class="reference external" href="https://schema.org/Text"><code class="docutils literal notranslate"><span class="pre">Text</span></code></a>(SHOULD) <br> [<em>link to a Contextual Entity in the RO-Crate Metadata
-File with a name and description.MAY have a URI (eg for Creative Commons or Open Source licenses). MAY, if necessary be a textual description
-of how the RO-Crate may be used</em>]</p></li>
+<li><p><a class="reference external" href="https://schema.org/name"><code class="docutils literal notranslate"><span class="pre">name</span></code></a>: <a class="reference external" href="https://schema.org/Text"><code class="docutils literal notranslate"><span class="pre">Text</span></code></a> (SHOULD) <br> [<em>identify the dataset to humans well enough to disambiguate it from other RO-Crates</em>]</p></li>
+<li><p><a class="reference external" href="https://schema.org/description"><code class="docutils literal notranslate"><span class="pre">description</span></code></a>:<a class="reference external" href="https://schema.org/Text"><code class="docutils literal notranslate"><span class="pre">Text</span></code></a> (SHOULD) <br> [<em>further elaborate on the name to provide a summary of the context in which the dataset is important</em>]</p></li>
+<li><p><a class="reference external" href="https://schema.org/license"><code class="docutils literal notranslate"><span class="pre">license</span></code></a>:<a class="reference external" href="https://schema.org/CreativeWork"><code class="docutils literal notranslate"><span class="pre">CreativeWork</span></code></a> or <a class="reference external" href="https://schema.org/URL"><code class="docutils literal notranslate"><span class="pre">URL</span></code></a> or <a class="reference external" href="https://schema.org/Text"><code class="docutils literal notranslate"><span class="pre">Text</span></code></a>(SHOULD) <br> [<em>link to a Contextual Entity in the RO-Crate Metadata File with a name and description. MAY have a URI (eg for Creative Commons or Open Source licenses). MAY, if necessary be a textual description of how the RO-Crate may be used</em>]</p></li>
 <li><p><a class="reference external" href="http://schema.org/measurementTechnique"><code class="docutils literal notranslate"><span class="pre">acquisition_method</span></code></a>: <a class="reference external" href="https://schema.org/DefinedTerm"><code class="docutils literal notranslate"><span class="pre">DefinedTerm</span></code></a> or <a class="reference external" href="https://schema.org/URL"><code class="docutils literal notranslate"><span class="pre">URL</span></code></a> (COULD) <br>
 [<em>link to Contextual Entity in the Ro-Crate Metadata File describing the method with name and linked specimen. MAY have a termCode and a inDefinedTermSet (eg if Contextual Entity is of type DefinedTerm).</em>]</p></li>
 <li><p><a class="reference external" href="http://purl.obolibrary.org/obo/HSO_0000308"><code class="docutils literal notranslate"><span class="pre">specimen</span></code></a>:<a class="reference internal" href="#"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">BioChemEntity</span></code></span></a> (MUST) <br> [<em>to specify this Ro-Crate is about this particular subject</em>]</p></li>
@@ -476,7 +479,7 @@ of how the RO-Crate may be used</em>]</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&#64;type</span></code>: <a class="reference external" href="https://schema.org/BioChemEntity"><code class="docutils literal notranslate"><span class="pre">BioChemEntity</span></code></a> (MUST)</p></li>
 <li><p><a class="reference external" href="https://schema.org/additionalType"><code class="docutils literal notranslate"><span class="pre">additionalType</span></code></a>: <a class="reference external" href="http://purl.obolibrary.org/obo/OBI_0002648"><code class="docutils literal notranslate"><span class="pre">biosample</span></code></a></p></li>
 <li><p><a class="reference external" href="https://schema.org/name"><code class="docutils literal notranslate"><span class="pre">name</span></code></a>: <a class="reference external" href="https://schema.org/Text"><code class="docutils literal notranslate"><span class="pre">Text</span></code></a> (COULD) <br> [<em>human readable name of linked term</em>]</p></li>
-<li><p><a class="reference external" href="https://schema.org/taxonomicRange"><code class="docutils literal notranslate"><span class="pre">organism_classification</span></code></a>:<a class="reference external" href="https://schema.org/DefinedTerm"><code class="docutils literal notranslate"><span class="pre">DefinedTerm</span></code></a> or <a class="reference external" href="https://schema.org/Taxon"><code class="docutils literal notranslate"><span class="pre">Taxon</span></code></a> or <a class="reference external" href="https://schema.org/Text"><code class="docutils literal notranslate"><span class="pre">Text</span></code></a> or <a class="reference external" href="https://schema.org/URL"><code class="docutils literal notranslate"><span class="pre">URL</span></code></a> (MUST) <br>[<em>organismus classification via id or via link to Contextual Entity in the Ro-Crate Metadata File describing the organism. MAY have a name to present the human readable name of the term.</em>]</p></li>
+<li><p><a class="reference external" href="https://schema.org/taxonomicRange"><code class="docutils literal notranslate"><span class="pre">organism_classification</span></code></a>:<a class="reference external" href="https://schema.org/DefinedTerm"><code class="docutils literal notranslate"><span class="pre">DefinedTerm</span></code></a> or <a class="reference external" href="https://schema.org/Taxon"><code class="docutils literal notranslate"><span class="pre">Taxon</span></code></a> or <a class="reference external" href="https://schema.org/Text"><code class="docutils literal notranslate"><span class="pre">Text</span></code></a> or <a class="reference external" href="https://schema.org/URL"><code class="docutils literal notranslate"><span class="pre">URL</span></code></a> (MUST) <br>[<em>organism classification via id or via link to Contextual Entity in the Ro-Crate Metadata File describing the organism. MAY have a name to present the human readable name of the term.</em>]</p></li>
 </ul>
 </li>
 </ul>
@@ -484,9 +487,9 @@ of how the RO-Crate may be used</em>]</p></li>
 </section>
 <section id="custom-context-and-extended-metadata">
 <h2>Custom Context and Extended Metadata:<a class="headerlink" href="#custom-context-and-extended-metadata" title="Link to this heading">#</a></h2>
-<p>allows to define custom fields within your RO-Crate metadata document and describe how they should be interpreted.</p>
+<p>Allows to define custom fields within your RO-Crate metadata document and describe how they should be interpreted.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;@context&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="s2">&quot;https://w3id.org/ro/crate/1.2-DRAFT/context&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;https://w3id.org/ro/crate/1.2/context&quot;</span><span class="p">,</span>
     <span class="p">{</span>
       <span class="s2">&quot;organism_classification&quot;</span><span class="p">:</span> <span class="s2">&quot;https://schema.org/taxonomicRange&quot;</span><span class="p">,</span>
       <span class="s2">&quot;obo&quot;</span><span class="p">:</span> <span class="s2">&quot;http://purl.obolibrary.org/obo/&quot;</span><span class="p">,</span>
@@ -504,10 +507,10 @@ of how the RO-Crate may be used</em>]</p></li>
 </section>
 <section id="minimal-example">
 <h2>Minimal example<a class="headerlink" href="#minimal-example" title="Link to this heading">#</a></h2>
-<p>see <a class="reference internal" href="#mic-ro-crate-metadata.json"><span class="xref myst">mic-ro-crate-metadata.json</span></a> open in</p>
+<p>See <a class="reference internal" href="#mic-ro-crate-metadata.json"><span class="xref myst">mic-ro-crate-metadata.json</span></a> open in:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://arunaengine.github.io/ro-crate-explorer/?crate=%7B%0A++%22%40context%22%3A+%5B%0A++++%22https%3A%2F%2Fw3id.org%2Fro%2Fcrate%2F1.1%2Fcontext%22%2C%0A++++%7B%0A++++++%22organism_classification%22%3A+%22https%3A%2F%2Fschema.org%2FtaxonomicRange%22%2C%0A++++++%22obo%22%3A+%22http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2F%22%2C%0A++++++%22acquisiton_method%22%3A+%7B%0A++++++++%22%40reverse%22%3A+%22https%3A%2F%2Fschema.org%2Fresult%22%2C%0A++++++++%22%40type%22%3A+%22%40id%22%0A++++++%7D%2C%0A++++++%22biosample%22%3A+%22http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0002648%22%2C%0A++++++%22specimen%22%3A+%22https%3A%2F%2Fschema.org%2Fabout%22%0A++++%7D%0A++%5D%2C%0A++%22%40graph%22%3A+%5B%0A++++%7B%0A++++++%22%40id%22%3A+%22https%3A%2F%2Fwww.ebi.ac.uk%2Fbiostudies%2Fbioimages%2Fstudies%2FS-BIAD464%22%2C%0A++++++%22%40type%22%3A+%22Dataset%22%2C%0A++++++%22name%22%3A+%22Calcium+wave+dynamics%22%2C%0A++++++%22description%22%3A+%22Time+lapse+image+of+whole+leaves+expressing+calcium+and+glutamate+responses%22%2C%0A++++++%22license%22%3A+%22https%3A%2F%2Fcreativecommons.org%2Flicenses%2Fby%2F4.0%2F%22%2C%0A++++++%22acquisition_method%22%3A+%7B%0A++++++++%22%40id%22%3A+%22%2325173e15-dd40-4287-a35c-c234ba1d366e%22%0A++++++%7D%2C%0A++++++%22specimen%22%3A+%7B%0A++++++++%22%40id%22%3A+%22%2353ce45ab-62a5-4c9d-afbd-bb8fe572e001%22%0A++++++%7D%2C%0A++++++%22hasPart%22%3A+%7B%0A++++++++%22%40id%22%3A+%22https%3A%2F%2Fuk1s3.embassy.ebi.ac.uk%2Febi-ngff-challenge-2024%2Fc0e5d621-62cc-43a6-9dad-2ddab8959d17.zarr%2Fzarr.json%22%0A++++++%7D%0A++++%7D%2C%0A++++%7B%0A++++++%22%40id%22%3A+%22ro-crate-metadata.json%22%2C%0A++++++%22%40type%22%3A+%22CreativeWork%22%2C%0A++++++%22conformsTo%22%3A+%7B%0A++++++++%22%40id%22%3A+%22https%3A%2F%2Fw3id.org%2Fro%2Fcrate%2F1.2-DRAFT%22%0A++++++%7D%2C%0A++++++%22about%22%3A+%7B%0A++++++++%22%40id%22%3A+%22https%3A%2F%2Fwww.ebi.ac.uk%2Fbiostudies%2Fbioimages%2Fstudies%2FS-BIAD464%22%0A++++++%7D%0A++++%7D%2C%0A++++%7B%0A++++++%22%40id%22%3A+%22%2353ce45ab-62a5-4c9d-afbd-bb8fe572e001%22%2C%0A++++++%22%40type%22%3A+%22BioChemEntity%22%2C%0A++++++%22additionalType%22%3A+%22biosample%22%2C%0A++++++%22organism_classification%22%3A+%7B%0A++++++++%22%40id%22%3A+%22NCBI%3Atxid3701%22%0A++++++%7D%0A++++%7D%2C%0A++++%7B%0A++++++%22%40id%22%3A+%22%2325173e15-dd40-4287-a35c-c234ba1d366e%22%2C%0A++++++%22%40type%22%3A+%22obo%3AFBbi_00000251%22%2C%0A++++++%22name%22%3A+%22confocal+microscopy%22%0A++++%7D%0A++%5D%0A%7D">RO-Crate Explorer</a></p></li>
-<li><p><a class="reference external" href="https://json-ld.org/playground/#startTab=tab-expanded&amp;amp;json-ld=%7B%22%40context%22%3A%5B%22https%3A%2F%2Fw3id.org%2Fro%2Fcrate%2F1.1%2Fcontext%22%2C%7B%22organism_classification%22%3A%22https%3A%2F%2Fschema.org%2FtaxonomicRange%22%2C%22obo%22%3A%22http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2F%22%2C%22acquisiton_method%22%3A%7B%22%40reverse%22%3A%22https%3A%2F%2Fschema.org%2Fresult%22%2C%22%40type%22%3A%22%40id%22%7D%2C%22biosample%22%3A%22http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0002648%22%2C%22specimen%22%3A%22https%3A%2F%2Fschema.org%2Fabout%22%7D%5D%2C%22%40graph%22%3A%5B%7B%22%40id%22%3A%22https%3A%2F%2Fwww.ebi.ac.uk%2Fbiostudies%2Fbioimages%2Fstudies%2FS-BIAD464%22%2C%22%40type%22%3A%22Dataset%22%2C%22name%22%3A%22Calcium%20wave%20dynamics%22%2C%22description%22%3A%22Time%20lapse%20image%20of%20whole%20leaves%20expressing%20calcium%20and%20glutamate%20responses%22%2C%22license%22%3A%22https%3A%2F%2Fcreativecommons.org%2Flicenses%2Fby%2F4.0%2F%22%2C%22acquisition_method%22%3A%7B%22%40id%22%3A%22%2325173e15-dd40-4287-a35c-c234ba1d366e%22%7D%2C%22specimen%22%3A%7B%22%40id%22%3A%22%2353ce45ab-62a5-4c9d-afbd-bb8fe572e001%22%7D%2C%22hasPart%22%3A%7B%22%40id%22%3A%22https%3A%2F%2Fuk1s3.embassy.ebi.ac.uk%2Febi-ngff-challenge-2024%2Fc0e5d621-62cc-43a6-9dad-2ddab8959d17.zarr%2Fzarr.json%22%7D%7D%2C%7B%22%40id%22%3A%22ro-crate-metadata.json%22%2C%22%40type%22%3A%22CreativeWork%22%2C%22conformsTo%22%3A%7B%22%40id%22%3A%22https%3A%2F%2Fw3id.org%2Fro%2Fcrate%2F1.2-DRAFT%22%7D%2C%22about%22%3A%7B%22%40id%22%3A%22https%3A%2F%2Fwww.ebi.ac.uk%2Fbiostudies%2Fbioimages%2Fstudies%2FS-BIAD464%22%7D%7D%2C%7B%22%40id%22%3A%22%2353ce45ab-62a5-4c9d-afbd-bb8fe572e001%22%2C%22%40type%22%3A%22BioChemEntity%22%2C%22additionalType%22%3A%22biosample%22%2C%22organism_classification%22%3A%7B%22%40id%22%3A%22NCBI%3Atxid3701%22%7D%7D%2C%7B%22%40id%22%3A%22%2325173e15-dd40-4287-a35c-c234ba1d366e%22%2C%22%40type%22%3A%22obo%3AFBbi_00000251%22%2C%22name%22%3A%22confocal%20microscopy%22%7D%5D%7D">JSON-LD Playground</a></p></li>
+<li><p><a class="reference external" href="https://arunaengine.github.io/ro-crate-explorer/?crate=%7B%0A++%22%40context%22%3A+%5B%0A++++%22https%3A%2F%2Fw3id.org%2Fro%2Fcrate%2F1.1%2Fcontext%22%2C%0A++++%7B%0A++++++%22organism_classification%22%3A+%22https%3A%2F%2Fschema.org%2FtaxonomicRange%22%2C%0A++++++%22obo%22%3A+%22http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2F%22%2C%0A++++++%22acquisiton_method%22%3A+%7B%0A++++++++%22%40reverse%22%3A+%22https%3A%2F%2Fschema.org%2Fresult%22%2C%0A++++++++%22%40type%22%3A+%22%40id%22%0A++++++%7D%2C%0A++++++%22biosample%22%3A+%22http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0002648%22%2C%0A++++++%22specimen%22%3A+%22https%3A%2F%2Fschema.org%2Fabout%22%0A++++%7D%0A++%5D%2C%0A++%22%40graph%22%3A+%5B%0A++++%7B%0A++++++%22%40id%22%3A+%22https%3A%2F%2Fwww.ebi.ac.uk%2Fbiostudies%2Fbioimages%2Fstudies%2FS-BIAD464%22%2C%0A++++++%22%40type%22%3A+%22Dataset%22%2C%0A++++++%22name%22%3A+%22Calcium+wave+dynamics%22%2C%0A++++++%22description%22%3A+%22Time+lapse+image+of+whole+leaves+expressing+calcium+and+glutamate+responses%22%2C%0A++++++%22license%22%3A+%22https%3A%2F%2Fcreativecommons.org%2Flicenses%2Fby%2F4.0%2F%22%2C%0A++++++%22acquisition_method%22%3A+%7B%0A++++++++%22%40id%22%3A+%22%2325173e15-dd40-4287-a35c-c234ba1d366e%22%0A++++++%7D%2C%0A++++++%22specimen%22%3A+%7B%0A++++++++%22%40id%22%3A+%22%2353ce45ab-62a5-4c9d-afbd-bb8fe572e001%22%0A++++++%7D%2C%0A++++++%22hasPart%22%3A+%7B%0A++++++++%22%40id%22%3A+%22https%3A%2F%2Fuk1s3.embassy.ebi.ac.uk%2Febi-ngff-challenge-2024%2Fc0e5d621-62cc-43a6-9dad-2ddab8959d17.zarr%2Fzarr.json%22%0A++++++%7D%0A++++%7D%2C%0A++++%7B%0A++++++%22%40id%22%3A+%22ro-crate-metadata.json%22%2C%0A++++++%22%40type%22%3A+%22CreativeWork%22%2C%0A++++++%22conformsTo%22%3A+%7B%0A++++++++%22%40id%22%3A+%22https%3A%2F%2Fw3id.org%2Fro%2Fcrate%2F1.2%22%0A++++++%7D%2C%0A++++++%22about%22%3A+%7B%0A++++++++%22%40id%22%3A+%22https%3A%2F%2Fwww.ebi.ac.uk%2Fbiostudies%2Fbioimages%2Fstudies%2FS-BIAD464%22%0A++++++%7D%0A++++%7D%2C%0A++++%7B%0A++++++%22%40id%22%3A+%22%2353ce45ab-62a5-4c9d-afbd-bb8fe572e001%22%2C%0A++++++%22%40type%22%3A+%22BioChemEntity%22%2C%0A++++++%22additionalType%22%3A+%22biosample%22%2C%0A++++++%22organism_classification%22%3A+%7B%0A++++++++%22%40id%22%3A+%22NCBI%3Atxid3701%22%0A++++++%7D%0A++++%7D%2C%0A++++%7B%0A++++++%22%40id%22%3A+%22%2325173e15-dd40-4287-a35c-c234ba1d366e%22%2C%0A++++++%22%40type%22%3A+%22obo%3AFBbi_00000251%22%2C%0A++++++%22name%22%3A+%22confocal+microscopy%22%0A++++%7D%0A++%5D%0A%7D">RO-Crate Explorer</a></p></li>
+<li><p><a class="reference external" href="https://json-ld.org/playground/#startTab=tab-expanded&amp;amp;json-ld=%7B%22%40context%22%3A%5B%22https%3A%2F%2Fw3id.org%2Fro%2Fcrate%2F1.1%2Fcontext%22%2C%7B%22organism_classification%22%3A%22https%3A%2F%2Fschema.org%2FtaxonomicRange%22%2C%22obo%22%3A%22http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2F%22%2C%22acquisiton_method%22%3A%7B%22%40reverse%22%3A%22https%3A%2F%2Fschema.org%2Fresult%22%2C%22%40type%22%3A%22%40id%22%7D%2C%22biosample%22%3A%22http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0002648%22%2C%22specimen%22%3A%22https%3A%2F%2Fschema.org%2Fabout%22%7D%5D%2C%22%40graph%22%3A%5B%7B%22%40id%22%3A%22https%3A%2F%2Fwww.ebi.ac.uk%2Fbiostudies%2Fbioimages%2Fstudies%2FS-BIAD464%22%2C%22%40type%22%3A%22Dataset%22%2C%22name%22%3A%22Calcium%20wave%20dynamics%22%2C%22description%22%3A%22Time%20lapse%20image%20of%20whole%20leaves%20expressing%20calcium%20and%20glutamate%20responses%22%2C%22license%22%3A%22https%3A%2F%2Fcreativecommons.org%2Flicenses%2Fby%2F4.0%2F%22%2C%22acquisition_method%22%3A%7B%22%40id%22%3A%22%2325173e15-dd40-4287-a35c-c234ba1d366e%22%7D%2C%22specimen%22%3A%7B%22%40id%22%3A%22%2353ce45ab-62a5-4c9d-afbd-bb8fe572e001%22%7D%2C%22hasPart%22%3A%7B%22%40id%22%3A%22https%3A%2F%2Fuk1s3.embassy.ebi.ac.uk%2Febi-ngff-challenge-2024%2Fc0e5d621-62cc-43a6-9dad-2ddab8959d17.zarr%2Fzarr.json%22%7D%7D%2C%7B%22%40id%22%3A%22ro-crate-metadata.json%22%2C%22%40type%22%3A%22CreativeWork%22%2C%22conformsTo%22%3A%7B%22%40id%22%3A%22https%3A%2F%2Fw3id.org%2Fro%2Fcrate%2F1.2%22%7D%2C%22about%22%3A%7B%22%40id%22%3A%22https%3A%2F%2Fwww.ebi.ac.uk%2Fbiostudies%2Fbioimages%2Fstudies%2FS-BIAD464%22%7D%7D%2C%7B%22%40id%22%3A%22%2353ce45ab-62a5-4c9d-afbd-bb8fe572e001%22%2C%22%40type%22%3A%22BioChemEntity%22%2C%22additionalType%22%3A%22biosample%22%2C%22organism_classification%22%3A%7B%22%40id%22%3A%22NCBI%3Atxid3701%22%7D%7D%2C%7B%22%40id%22%3A%22%2325173e15-dd40-4287-a35c-c234ba1d366e%22%2C%22%40type%22%3A%22obo%3AFBbi_00000251%22%2C%22name%22%3A%22confocal%20microscopy%22%7D%5D%7D">JSON-LD Playground</a></p></li>
 </ul>
 </section>
 </section>
@@ -576,7 +579,7 @@ of how the RO-Crate may be used</em>]</p></li>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#specification">Specification</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#micrate-specification">MICrate Specification</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ro-crate-metadata-descriptor">RO-Crate Metadata Descriptor</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#root-data-entity">Root Data Entity</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contextual-entity">Contextual Entity</a></li>
@@ -610,7 +613,7 @@ By Susanne Kunis, Josh Moore,... and the NFDI4BioImage Initiative
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on 2026-02-16.
+  Last updated on 2026-02-24.
   <br/>
 </p>
   </div>
@@ -619,7 +622,7 @@ By Susanne Kunis, Josh Moore,... and the NFDI4BioImage Initiative
     
 <div class="extra_footer">
   <p>
-Copyright: Licensed <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY 4.0</a> unless mentioned otherwise. 
+Copyright: Licensed <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY 4.0</a> unless mentioned otherwise.
 Contributions and feedback are welcome.
 </p>
 

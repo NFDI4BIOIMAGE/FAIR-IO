@@ -1,6 +1,6 @@
 # Guidelines
 
-## Which type of RO-Crate should I use (attache or detached)
+## Which type of RO-Crate should I use (attached or detached)
 ### Quick checklist – are you building the right type?
 
 1. Do you know the total size of the files?

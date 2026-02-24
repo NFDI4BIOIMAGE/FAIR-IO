@@ -60,11 +60,11 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'specification/ro-crate';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="RO-Crate Bioimaging profile (detached)" href="MICrate.html" />
+    <link rel="next" title="RO-Crate Bioimaging profiles (detached)" href="MICrate.html" />
     <link rel="prev" title="What is a FAIR-IO" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="2026-02-16"/>
+    <meta name="docbuild:last-update" content="2026-02-24"/>
   </head>
   
   
@@ -184,7 +184,7 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="index.html">What is a FAIR-IO</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">RO-Crate</a></li>
-<li class="toctree-l1"><a class="reference internal" href="MICrate.html">RO-Crate Bioimaging profile (detached)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MICrate.html">RO-Crate Bioimaging profiles (detached)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Usage</span></p>
 <ul class="nav bd-sidenav">
@@ -193,7 +193,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Use-Cases</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../use-cases/index.html">Community/ Use-Cases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../use-cases/index.html">Community/Use-Cases</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contributing</span></p>
 <ul class="nav bd-sidenav">
@@ -397,7 +397,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-a-rocrate-actually-is">What a RO‑Crate actually is</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-visual-example">Quick visual example</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-points-detached-ro-crate">Key points detached ro-crate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-points-of-detached-ro-crates">Key points of detached RO-Crates:</a></li>
 </ul>
             </nav>
         </div>
@@ -417,11 +417,11 @@ document.write(`
 <li><p>RO = Research Object – any collection of files that belong together in a research project (data tables, figures, code, PDFs, …).</p></li>
 <li><p>Crate = a container (think of a cardboard box).</p></li>
 </ul>
-<p>A <strong>RO-Crate</strong> is a <strong>standardised digital box</strong> that holds all the files plus a small metadata file that tells you what each file is, who created it, when, under which licence, etc.
-It can be compared to a ZIP folder + a “data sheet” that explains what each element is, who created it, and under what conditions it may be shared.</p>
+<p>A <strong>RO-Crate</strong> is a <strong>standardised digital box</strong> that holds all the files plus a small metadata file that tells you what each file is, who created it, when, under which licence, etc. It can be compared to a ZIP folder + a “data sheet” that explains what each element is, who created it, and under what conditions it may be shared.</p>
 <p>An <strong>attached</strong> RO-Crate bundles the actual data together with its metadata, giving you a self‑contained, portable snapshot.</p>
 <p>A <strong>detached</strong> RO-Crate carries only the metadata and points to data that remains stored elsewhere, which keeps the crate lightweight but relies on the external locations staying accessible.
 Using RO-Crates makes your work <strong>FAIR</strong>, easier to cite, and ready for journal or archive submission.</p>
+<p>The details of how to build RO-Crates are developed openly as a <a class="reference external" href="https://www.researchobject.org/ro-crate/">community project</a>.</p>
 </section>
 <section id="quick-visual-example">
 <h2>Quick visual example<a class="headerlink" href="#quick-visual-example" title="Link to this heading">#</a></h2>
@@ -440,13 +440,13 @@ Using RO-Crates makes your work <strong>FAIR</strong>, easier to cite, and ready
 </pre></div>
 </div>
 </section>
-<section id="key-points-detached-ro-crate">
-<h2>Key points detached ro-crate<a class="headerlink" href="#key-points-detached-ro-crate" title="Link to this heading">#</a></h2>
+<section id="key-points-of-detached-ro-crates">
+<h2>Key points of detached RO-Crates:<a class="headerlink" href="#key-points-of-detached-ro-crates" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>exists without defined root directory,</p></li>
-<li><p>not processed in a file-system context</p></li>
-<li><p>referenced data entities are web-based</p></li>
-<li><p>naming convention: ${prefix}-ro-crate-metadata.json</p></li>
+<li><p>They exist without defined root directory,</p></li>
+<li><p>They are not processed in a file-system context</p></li>
+<li><p>The referenced data entities are web-based</p></li>
+<li><p>They follow a naming convention: ${prefix}-ro-crate-metadata.json</p></li>
 </ul>
 </section>
 </section>
@@ -495,7 +495,7 @@ Using RO-Crates makes your work <strong>FAIR</strong>, easier to cite, and ready
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">RO-Crate Bioimaging profile (detached)</p>
+        <p class="prev-next-title">RO-Crate Bioimaging profiles (detached)</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -517,7 +517,7 @@ Using RO-Crates makes your work <strong>FAIR</strong>, easier to cite, and ready
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-a-rocrate-actually-is">What a RO‑Crate actually is</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-visual-example">Quick visual example</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-points-detached-ro-crate">Key points detached ro-crate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-points-of-detached-ro-crates">Key points of detached RO-Crates:</a></li>
 </ul>
   </nav></div>
 
@@ -544,7 +544,7 @@ By Susanne Kunis, Josh Moore,... and the NFDI4BioImage Initiative
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on 2026-02-16.
+  Last updated on 2026-02-24.
   <br/>
 </p>
   </div>
@@ -553,7 +553,7 @@ By Susanne Kunis, Josh Moore,... and the NFDI4BioImage Initiative
     
 <div class="extra_footer">
   <p>
-Copyright: Licensed <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY 4.0</a> unless mentioned otherwise. 
+Copyright: Licensed <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY 4.0</a> unless mentioned otherwise.
 Contributions and feedback are welcome.
 </p>
 
