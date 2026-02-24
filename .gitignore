@@ -1,0 +1,6 @@
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Ignore Jupyter Notebook build files
+_build/

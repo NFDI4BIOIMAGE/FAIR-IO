@@ -6,7 +6,7 @@ Add your **markdown files** to the section folders under `docs` and register the
 The **YML** files under `resources/` contain
 metadata about contributed material that is already published elsewhere.
 
-Their structure is examplified here:
+Their structure is exemplified here:
 ```
 resources
 - name: NFDI4BioImage Website
