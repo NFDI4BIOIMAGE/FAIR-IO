@@ -1,7 +1,6 @@
 # Guidelines
 
-## Which type of RO-Crate should I use (attached or detached)
-### Quick checklist – are you building the right type?
+## RO-Crate Quick checklist – are you building the right type (attached or detached)?
 
 1. Do you know the total size of the files?
         < 5 GB → attached is fine.
@@ -22,7 +21,7 @@
 If you answer “yes” to 1–3, go with attached; otherwise, go detached.
 
 (guidelines:ref:checklistZarr)=
-### Checklist – When to choose OME‑Zarr
+## Checklist – When to choose OME‑Zarr
 |✅ Condition |	Why OME‑Zarr is beneficial|
 | --- | --- |
 | Dataset is large (multi‑GB to TB) |	Chunked storage and lazy loading keep memory use low.|
