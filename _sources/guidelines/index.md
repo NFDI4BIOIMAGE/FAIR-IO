@@ -22,7 +22,7 @@
 If you answer “yes” to 1–3, go with attached; otherwise, go detached.
 
 (guidelines:ref:checklistZarr)=
-## Checklist – When to choose OME‑Zarr
+### Checklist – When to choose OME‑Zarr
 |✅ Condition |	Why OME‑Zarr is beneficial|
 | --- | --- |
 | Dataset is large (multi‑GB to TB) |	Chunked storage and lazy loading keep memory use low.|
