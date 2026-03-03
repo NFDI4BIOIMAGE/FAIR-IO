@@ -12,8 +12,7 @@ $\color{#D29922}\textsf{Warning: This knowledge base isn't complete}$
 ## Contributing
 **Feedback and contributions are very welcome!**
 
-You can find instructions on how to contribute on the [contributing page](contributing/index.md), for example by opening a [GitHub issue](https://github.com/NFDI4BIOIMAGE/FAIR-IO/issues).
-Consider adding your favorite training resources so we can make sure they are findable and reusable.
+Please make your contributions via [github issue](https://github.com/NFDI4BIOIMAGE/FAIR-IO/issues).
 
 ## License
 All contents of this Jupyter book and the corresponding Github repository are licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/), unless mentioned otherwise.

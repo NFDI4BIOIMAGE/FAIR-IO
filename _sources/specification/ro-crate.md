@@ -1,6 +1,6 @@
 # RO-Crate
 
-### What a RO‑Crate actually is
+## What a RO‑Crate actually is
 
 * RO = Research Object – any collection of files that belong together in a research project (data tables, figures, code, PDFs, …).
 * Crate = a container (think of a cardboard box).

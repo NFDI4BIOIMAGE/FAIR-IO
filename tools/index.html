@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Tools &#8212; NFDI4BioImage FAIR-IO</title>
+    <title>Tools and Sources &#8212; NFDI4BioImage FAIR-IO</title>
   
   
   
@@ -183,12 +183,13 @@
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Specifications</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../specification/index.html">What is a FAIR-IO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../specification/ome-zarr.html">OME-Zarr</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../specification/ro-crate.html">RO-Crate</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../specification/MICrate.html">RO-Crate Bioimaging profiles (detached)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Usage</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tools</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tools and Sources</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guidelines/index.html">Guidelines</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Use-Cases</span></p>
@@ -366,7 +367,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -377,11 +380,31 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Tools</h1>
+    <h1>Tools and Sources</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tools">Tools</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ro-crate-tools">RO-Crate tools</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ngff-converter">NGFF-Converter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ome-ngff-validator">OME-NGFF-Validator</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#omero-cli-transfer">omero-cli-transfer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#omero-rdf">omero-rdf</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#omero-forms">OMERO.forms</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sources">Sources</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ome-owl">OME-OWL</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -391,18 +414,59 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="tools">
-<h1>Tools<a class="headerlink" href="#tools" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="tools-and-sources">
+<span id="tools-ref-main"></span><h1>Tools and Sources<a class="headerlink" href="#tools-and-sources" title="Link to this heading">#</a></h1>
 <p>Overview of software, libraries, and CLI tools that generate, read, or convert FAIR-IO or its components.</p>
-<ul class="simple">
-<li><p><strong>NGFF-Converter</strong></p></li>
-<li><p><a class="reference external" href="https://ome.github.io/ome-ngff-validator/"><strong>OME-NGFF-Validator</strong></a> validates OME-Zarr v.0.5 files containing ro-crate-metadata.json.</p></li>
-<li><p><a class="reference external" href="https://github.com/ome/omero-cli-transfer"><strong>omero-cli-transfer</strong></a>, which allows export of OMERO image data compliant with RO-Crate</p></li>
-<li><p><a class="reference external" href="https://github.com/German-BioImaging/omero-rdf"><strong>omero-rdf</strong></a>, allows you to export RDF from OMERO</p></li>
-<li><p><a class="reference internal" href="#"><span class="xref myst"><strong>omero-arc</strong></span></a></p></li>
-<li><p><a class="reference internal" href="#"><span class="xref myst"><strong>OMERO.forms</strong></span></a></p></li>
-<li><p><a class="reference external" href="https://arunaengine.github.io/ro-crate-explorer/"><strong>RO-Crate Viewer</strong></a> for exploring and visualizing RO-Crates (<a class="reference external" href="https://github.com/arunaengine/ro-crate-explorer">GitHub</a>).</p></li>
-</ul>
+<section id="tools">
+<h2>Tools<a class="headerlink" href="#tools" title="Link to this heading">#</a></h2>
+<hr class="docutils" />
+<section id="ro-crate-tools">
+<h3>RO-Crate tools<a class="headerlink" href="#ro-crate-tools" title="Link to this heading">#</a></h3>
+<p>List of RO-Crate tools (with description and status)</p>
+<p><strong>Link:</strong> <a class="reference external" href="https://www.researchobject.org/ro-crate/tools">https://www.researchobject.org/ro-crate/tools</a></p>
+</section>
+<section id="ngff-converter">
+<h3>NGFF-Converter<a class="headerlink" href="#ngff-converter" title="Link to this heading">#</a></h3>
+<p>NGFF-Converter is a GUI application for conversion of bioimage formats into OME-NGFF (Next-Generation File Format) or OME-TIFF.</p>
+<p><strong>Plattform:</strong> Desktop GUI application <br>
+<strong>Link:</strong> <a class="github reference external" href="https://github.com/glencoesoftware/NGFF-Converter">glencoesoftware/NGFF-Converter</a></p>
+</section>
+<section id="ome-ngff-validator">
+<h3>OME-NGFF-Validator<a class="headerlink" href="#ome-ngff-validator" title="Link to this heading">#</a></h3>
+<p>Validates OME-Zarr v.0.5 files containing ro-crate-metatada.json.</p>
+<p><strong>Plattform:</strong> Web App <br>
+<strong>Link:</strong> <a class="reference external" href="https://ome.github.io/ome-ngff-validator/">https://ome.github.io/ome-ngff-validator/</a> <br>
+<strong>Example:</strong> <a class="reference external" href="https://ome.github.io/ome-ngff-validator/?source=https://radosgw.public.os.wwu.de/n4bi-fzj/ome2024-ngff-challenge/1micron_reconstructions_VOI2.zarr">https://ome.github.io/ome-ngff-validator/?source=https://radosgw.public.os.wwu.de/n4bi-fzj/ome2024-ngff-challenge/1micron_reconstructions_VOI2.zarr</a></p>
+</section>
+<section id="omero-cli-transfer">
+<h3>omero-cli-transfer<a class="headerlink" href="#omero-cli-transfer" title="Link to this heading">#</a></h3>
+<p>An OMERO CLI plugin for creating transfer packets between OMERO servers. Allows export of OMERO image data compliant with <strong>RO-Crate</strong>. Also offers an <strong>ARC plugin</strong> that can be used to transfer OMERO projects to ARC repositories.</p>
+<p><strong>Plattform:</strong> CLI tool <br>
+<strong>Link:</strong> <a class="github reference external" href="https://github.com/ome/omero-cli-transfer">ome/omero-cli-transfer</a></p>
+</section>
+<section id="omero-rdf">
+<h3>omero-rdf<a class="headerlink" href="#omero-rdf" title="Link to this heading">#</a></h3>
+<p>An OMERO CLI plugin for exporting RDF from OMERO.</p>
+<p><strong>Plattform:</strong> CLI tool <br>
+<strong>Link:</strong> <a class="github reference external" href="https://github.com/German-BioImaging/omero-rdf">German-BioImaging/omero-rdf</a></p>
+</section>
+<section id="omero-forms">
+<h3>OMERO.forms<a class="headerlink" href="#omero-forms" title="Link to this heading">#</a></h3>
+<p>OMERO.forms is an extension to <a class="reference external" href="http://OMERO.web">OMERO.web</a> to enhance metadata input and provide provenance. Forms can be designed in a powerful and flexible JSON Schema, using the Designer - Editor component of OMERO.forms.</p>
+<p><strong>Plattform:</strong> <a class="reference external" href="http://OMERO.web">OMERO.web</a> plugin <br>
+<strong>Link:</strong> <a class="github reference external" href="https://github.com/NL-BioImaging/OMERO.forms">NL-BioImaging/OMERO.forms</a></p>
+</section>
+</section>
+<section id="sources">
+<h2>Sources<a class="headerlink" href="#sources" title="Link to this heading">#</a></h2>
+<hr class="docutils" />
+<section id="ome-owl">
+<h3>OME-OWL<a class="headerlink" href="#ome-owl" title="Link to this heading">#</a></h3>
+<p>The Open Microscopy Environment Ontology (OME-OWL) is a light microscopy imaging ontology that has been developed through translation of the OME data model.</p>
+<p><strong>Plattform:</strong> Semantic-Web /Ontologie <br>
+<strong>Link:</strong> <a class="gitlab reference external" href="https://gitlab.com/openmicroscopy/incubator/ome-owl">openmicroscopy/incubator/ome-owl</a></p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -459,6 +523,33 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tools">Tools</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ro-crate-tools">RO-Crate tools</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ngff-converter">NGFF-Converter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ome-ngff-validator">OME-NGFF-Validator</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#omero-cli-transfer">omero-cli-transfer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#omero-rdf">omero-rdf</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#omero-forms">OMERO.forms</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sources">Sources</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ome-owl">OME-OWL</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

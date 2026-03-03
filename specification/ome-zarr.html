@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Guidelines &#8212; NFDI4BioImage FAIR-IO</title>
+    <title>OME-Zarr &#8212; NFDI4BioImage FAIR-IO</title>
   
   
   
@@ -57,11 +57,11 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'guidelines/index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'specification/ome-zarr';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Community/Use-Cases" href="../use-cases/index.html" />
-    <link rel="prev" title="Tools and Sources" href="../tools/index.html" />
+    <link rel="next" title="RO-Crate" href="ro-crate.html" />
+    <link rel="prev" title="What is a FAIR-IO" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
     <meta name="docbuild:last-update" content="2026-03-03"/>
@@ -181,16 +181,16 @@
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Specifications</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../specification/index.html">What is a FAIR-IO</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../specification/ome-zarr.html">OME-Zarr</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../specification/ro-crate.html">RO-Crate</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../specification/MICrate.html">RO-Crate Bioimaging profiles (detached)</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="index.html">What is a FAIR-IO</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">OME-Zarr</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ro-crate.html">RO-Crate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MICrate.html">RO-Crate Bioimaging profiles (detached)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Usage</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../tools/index.html">Tools and Sources</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guidelines/index.html">Guidelines</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Use-Cases</span></p>
 <ul class="nav bd-sidenav">
@@ -266,7 +266,7 @@
       
       
       
-      <li><a href="https://github.com/NFDI4BIOIMAGE/FAIR-IO/issues/new?title=Issue%20on%20page%20%2Fguidelines/index.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/NFDI4BIOIMAGE/FAIR-IO/issues/new?title=Issue%20on%20page%20%2Fspecification/ome-zarr.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -296,7 +296,7 @@
       
       
       
-      <li><a href="../_sources/guidelines/index.md" target="_blank"
+      <li><a href="../_sources/specification/ome-zarr.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -380,7 +380,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Guidelines</h1>
+    <h1>OME-Zarr</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -390,11 +390,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#which-type-of-ro-crate-should-i-use-attached-or-detached">Which type of RO-Crate should I use (attached or detached)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-checklist-are-you-building-the-right-type">Quick checklist – are you building the right type?</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checklist-when-to-choose-omezarr">Checklist – When to choose OME‑Zarr</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-makes-omezarr-so-appealing">What makes OME‑Zarr so appealing?</a></li>
 </ul>
             </nav>
         </div>
@@ -406,68 +402,26 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="guidelines">
-<h1>Guidelines<a class="headerlink" href="#guidelines" title="Link to this heading">#</a></h1>
-<section id="which-type-of-ro-crate-should-i-use-attached-or-detached">
-<h2>Which type of RO-Crate should I use (attached or detached)<a class="headerlink" href="#which-type-of-ro-crate-should-i-use-attached-or-detached" title="Link to this heading">#</a></h2>
-<section id="quick-checklist-are-you-building-the-right-type">
-<h3>Quick checklist – are you building the right type?<a class="headerlink" href="#quick-checklist-are-you-building-the-right-type" title="Link to this heading">#</a></h3>
-<ol class="arabic simple">
-<li><p>Do you know the total size of the files?
-&lt; 5 GB → attached is fine.
-&gt; 5 GB → think detached.</p></li>
-<li><p>Do you control the licence of the files?
-Yes, you can share them → attached.
-No, you can only provide a citation → detached.</p></li>
-<li><p>Will the data ever be updated?
-No, it’s a static snapshot → attached.
-Yes, you’ll keep a “live” version → detached.</p></li>
-<li><p>Do you need an easy, single‑file transfer?
-Yes → attached.
-No, you’re fine with a list of URLs → detached.</p></li>
-</ol>
-<p>If you answer “yes” to 1–3, go with attached; otherwise, go detached.</p>
-</section>
-</section>
-<section id="checklist-when-to-choose-omezarr">
-<span id="guidelines-ref-checklistzarr"></span><h2>Checklist – When to choose OME‑Zarr<a class="headerlink" href="#checklist-when-to-choose-omezarr" title="Link to this heading">#</a></h2>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>✅ Condition</p></th>
-<th class="head"><p>Why OME‑Zarr is beneficial</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Dataset is large (multi‑GB to TB)</p></td>
-<td><p>Chunked storage and lazy loading keep memory use low.</p></td>
-</tr>
-<tr class="row-odd"><td><p>Data need to be accessed remotely or collaboratively</p></td>
-<td><p>Zarr’s cloud‑native layout works with object storage (S3, GCS, Azure) and enables parallel reads/writes.</p></td>
-</tr>
-<tr class="row-even"><td><p>Multiscale or pyramidal representations are required</p></td>
-<td><p>Built‑in multiscale groups let you store and retrieve low‑resolution views efficiently.</p></td>
-</tr>
-<tr class="row-odd"><td><p>Rich metadata (OME‑NGFF) must be preserved</p></td>
-<td><p>Standardized JSON metadata keeps experimental context, acquisition parameters, and provenance together with the pixels.</p></td>
-</tr>
-<tr class="row-even"><td><p>You need on‑the‑fly transformations (e.g., stitching, reprojection, channel mixing)</p></td>
-<td><p>Upcoming spec features will allow transformation pipelines to be stored alongside the data.</p></td>
-</tr>
-<tr class="row-odd"><td><p>Your workflow involves chunk‑wise processing or analysis pipelines</p></td>
-<td><p>Each chunk can be read/written independently, ideal for distributed or HPC pipelines.</p></td>
-</tr>
-<tr class="row-even"><td><p>Long‑term archival and format stability are a priority</p></td>
-<td><p>The open‑source Zarr format is versioned, community‑maintained, and well‑documented.</p></td>
-</tr>
-<tr class="row-odd"><td><p>You want to avoid monolithic files that are hard to update</p></td>
-<td><p>Adding or modifying a single chunk does not require rewriting the whole file.</p></td>
-</tr>
-<tr class="row-even"><td><p>Your data will be shared publicly or deposited in repositories</p></td>
-<td><p>Zarr’s transparent directory structure is easy to host on public cloud buckets or institutional servers.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="ome-zarr">
+<h1>OME-Zarr<a class="headerlink" href="#ome-zarr" title="Link to this heading">#</a></h1>
+<section id="what-makes-omezarr-so-appealing">
+<h2>What makes OME‑Zarr so appealing?<a class="headerlink" href="#what-makes-omezarr-so-appealing" title="Link to this heading">#</a></h2>
+<figure class="align-right" id="chunkeddatacartoon">
+<a class="reference internal image-reference" href="../_images/monolithic-vs-chunked-300dpi-480x701.png"><img alt="../_images/monolithic-vs-chunked-300dpi-480x701.png" src="../_images/monolithic-vs-chunked-300dpi-480x701.png" style="width: 50%;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p><strong>Instant, on‑demand chunk access</strong> – Data is stored in small, independently addressable blocks, so you can stream, subset, or visualise only the pieces you need without loading the whole file.</p></li>
+<li><p><strong>Built in multiscale support</strong> – OME‑Zarr natively handles image pyramids, letting you zoom from low‑resolution overviews straight down to full‑resolution pixels.</p></li>
+<li><p><strong>Fast parallel writes</strong> – The format is optimised for concurrent writes, which is especially handy when saving data to networked or cloud storage systems.</p></li>
+<li><p><strong>Rich, community‑driven metadata</strong> – A flexible, hierarchical metadata schema lets you bundle raw images, segmentation masks, and downstream analysis results together in a single, self‑describing container.</p></li>
+<li><p><strong>Growing ecosystem</strong> – An expanding community contributes tools, plugins, and best‑practice guides, ensuring that OME‑Zarr stays up‑to‑date with the latest imaging workflows.</p></li>
+</ul>
+<p><strong>Links:</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://ngff.openmicroscopy.org/resources/ambassador-toolkit/index.html">OME-Zarr Ambassador Toolkit</a></p></li>
+<li><p><a class="reference internal" href="../guidelines/index.html#guidelines-ref-checklistzarr"><span class="std std-ref">Checklist - When to choose OME-Zarr</span></a></p></li>
+</ul>
 </section>
 </section>
 
@@ -484,7 +438,7 @@ No, you’re fine with a list of URLs → detached.</p></li>
         },
         kernelOptions: {
             name: "python3",
-            path: "./guidelines"
+            path: "./specification"
         },
         predefinedOutput: true
     }
@@ -502,20 +456,20 @@ No, you’re fine with a list of URLs → detached.</p></li>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../tools/index.html"
+       href="index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Tools and Sources</p>
+        <p class="prev-next-title">What is a FAIR-IO</p>
       </div>
     </a>
     <a class="right-next"
-       href="../use-cases/index.html"
+       href="ro-crate.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Community/Use-Cases</p>
+        <p class="prev-next-title">RO-Crate</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -535,11 +489,7 @@ No, you’re fine with a list of URLs → detached.</p></li>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#which-type-of-ro-crate-should-i-use-attached-or-detached">Which type of RO-Crate should I use (attached or detached)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-checklist-are-you-building-the-right-type">Quick checklist – are you building the right type?</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checklist-when-to-choose-omezarr">Checklist – When to choose OME‑Zarr</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-makes-omezarr-so-appealing">What makes OME‑Zarr so appealing?</a></li>
 </ul>
   </nav></div>
 
