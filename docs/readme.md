@@ -6,7 +6,7 @@ Here you will find **standards**, **tooling** and **best practices** for “FAIR
 The entities described are intended to promote the reuse and exchange of bioimaging data.
 
 
-$\color{#D29922}\textsf{Warning: This knowledge base isn't complete}$ 
+$\color{#D29922}\textsf{Warning: This knowledge base isn't complete}$
 
 
 ## Contributing
@@ -19,8 +19,4 @@ All contents of this Jupyter book and the corresponding Github repository are li
 
 
 ## Acknowledgements
-This project is funded by the Deutsche Forschungsgemeinschaft (DFG, German  Research Foundation) under the National Research Data Infrasstructure – NFDI 46/1 – 501864659.
-
-
-
-
+This project is funded by the Deutsche Forschungsgemeinschaft (DFG, German  Research Foundation) under the National Research Data Infrastructure – NFDI 46/1 – 501864659.

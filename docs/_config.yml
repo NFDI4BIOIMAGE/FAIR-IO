@@ -26,7 +26,7 @@ html:
   use_repository_button: true
   extra_footer: |
     <p>
-    Copyright: Licensed <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY 4.0</a> unless mentioned otherwise. 
+    Copyright: Licensed <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY 4.0</a> unless mentioned otherwise.
     Contributions and feedback are welcome.
     </p>
 sphinx:

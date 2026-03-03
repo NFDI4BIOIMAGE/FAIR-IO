@@ -6,7 +6,7 @@ https://NFDI4BIOIMAGE.github.io/FAIR-IO
 
 It is maintained using [Jupyter lab](https://jupyterlab.readthedocs.io/en/stable/) and build using [Jupyter book](https://jupyterbook.org/intro.html).
 
-To edit this book, install depencencies like this:
+To edit this book, install dependencies like this:
 
 ```
 pip install jupyterlab
