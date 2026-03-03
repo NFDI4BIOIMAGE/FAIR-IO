@@ -1,6 +1,6 @@
 # RO-Crate
 
-### What a RO‑Crate actually is
+## What a RO‑Crate actually is
 
 * RO = Research Object – any collection of files that belong together in a research project (data tables, figures, code, PDFs, …).
 * Crate = a container (think of a cardboard box).
@@ -14,7 +14,7 @@ An **attached** RO-Crate bundles the actual data together with its metadata, giv
 A **detached** RO-Crate carries only the metadata and points to data that remains stored elsewhere, which keeps the crate lightweight but relies on the external locations staying accessible.
 Using RO-Crates makes your work **FAIR**, easier to cite, and ready for journal or archive submission.
 
-### Quick visual example
+## Quick visual example
 **Attached crates** keep the data inside the box → fully portable but potentially large.
 ```
 my-attached-crate/
