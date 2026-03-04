@@ -52,7 +52,7 @@ OMERO.forms is an extension to OMERO.web to enhance metadata input and provide p
 The Open Microscopy Environment Ontology (OME-OWL) is a light microscopy imaging ontology that has been developed through translation of the OME data model.
 
 **Plattform:** Semantic-Web /Ontologie <br>
-**Link:** https://gitlab.com/openmicroscopy/incubator/ome-owl
+**Link:** https://github.com/german-BioImaging/ome-owl
 
 
 
